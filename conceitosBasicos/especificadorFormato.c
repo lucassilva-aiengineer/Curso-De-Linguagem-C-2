@@ -89,6 +89,25 @@ void juntandoTudo(){
 
 }
 
+
+void revisandoTudo(){
+
+    int idade = 25; 
+    float preco = 19.99; 
+    double pi = 3.1415926535; 
+    char currency = '$'; 
+    char nome[] = "Michel Silva"; 
+
+    printf("%d\n", idade);
+    printf("%f\n", preco); 
+    printf("%lf\n", pi);
+    printf("%c\n", currency); 
+    printf("%s\n", nome); 
+
+    // Também podemos formatar as nossas saídas. 
+
+}
+
 int main(){
 
 

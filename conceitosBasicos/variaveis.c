@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(){
+int conteudo(){
 
     int idade = 25;
     int ano = 2026; 
@@ -57,12 +57,14 @@ int main(){
 }
 
 
+
+
 // Tipos mais comuns de dados 
 
-// int = inteiro 
+// int = inteiro (4 bytes)
 // float = numeros decimais 4 bytes 
 // double = numeros decimais 8 bytes 
-// char = carcter unico 1 byte
+// char = caracter (1 byte)
 // char[] = string ou array de carcteres (tamanho variável)
 // bool = valor boleano (1 byte). 
 
@@ -71,3 +73,55 @@ int main(){
 // Primeiro crie um executável 
 // gcc variaveis.c -o variaveis
 // .\variaveis.exe
+
+
+void revisao(){
+
+
+    float mediaGeral = 9.5;
+    float preco = 100.50; 
+    float temperatura = 300.50; 
+    double pi = 3.14159265358979; 
+    char nota = 'A';  
+    char simbolo = '&'; 
+
+    printf("Media geral: %.2f\n", mediaGeral);
+    printf("Preco: %.2f\n", preco);
+    printf("Temperatura: %.2f°\n", temperatura); 
+    printf("O valor de pi: %.15lf\n", pi);
+    printf("A sua nota: %c\n", nota); 
+    printf("Simbolo: %c\n", simbolo);
+
+    // Construíndo uma string, uma lista de carcteres, um array de carcteres. 
+
+    char nome[] = "Mateus Silva"; 
+    char email[] = "fake_email123@servidor.com";
+
+    printf("Oi! O seu nome: %s\n", nome); 
+    printf("O seu email: %s\n", email);
+
+    // valores boleanos 
+
+    bool climaAgradavel = true; 
+
+
+    printf("Clima Agradavel: %d", climaAgradavel); 
+
+    if (climaAgradavel == true){
+
+        printf("Clima Agradavel!\n");
+
+    } else {
+
+        printf("Clima Nao Agradavel!\n");
+    }
+
+}
+
+
+int main(){
+
+    revisao(); 
+
+    return 0;
+}

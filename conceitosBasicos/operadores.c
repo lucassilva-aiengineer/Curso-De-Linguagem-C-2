@@ -8,22 +8,29 @@ void operadoresAritmeticos(){
 
 
     int numeroA = 10;
-    int numeroB = 20; 
+    int numeroB = 20;  // Em divisões para obtermos resultado é importante termos um tipo de dados float
+
     // int resultado = 0; 
 
     // Adição 
     // int resultado = numeroA + numeroB;
 
     // Subtração 
-    int resultado = numeroA - numeroB; 
+    // int resultado = numeroA - numeroB; 
 
 
-    printf("%d", resultado);
+    // Multiplicação
+    // int resultado = numeroA * numeroB; 
+
+
+    // Divisao 
+    float resultado = numeroA / numeroB;
+
+    printf("%f", resultado);
+
 
 }
 int main(){
-
-
 
     operadoresAritmeticos();
 
