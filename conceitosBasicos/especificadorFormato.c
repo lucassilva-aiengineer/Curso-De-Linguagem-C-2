@@ -108,6 +108,60 @@ void revisandoTudo(){
 
 }
 
+
+void formatacao(){
+
+    int numero1 = 1; 
+    int numero2 = 10; 
+    int numero3 = -100; 
+
+    // Indicando que a string deve ocupar 
+    // três espaços da esquerda para a direita 
+
+    printf("%3d\n", numero1);
+    printf("%3d\n", numero2); 
+    printf("%3d\n\n", numero3); 
+
+
+    // Alinhando os números pela esquerda 
+
+    
+    printf("%-3d\n", numero1);
+    printf("%-3d\n", numero2); 
+    printf("%-3d\n\n", numero3);
+
+
+    printf("%04d\n", numero1);
+    printf("%04d\n", numero2); 
+    printf("%04d\n", numero3);
+
+
+    printf("%+d\n", numero1);
+    printf("%+d\n", numero2); 
+    printf("%+d\n", numero3);
+}
+
+
+void formatacaoFloats(){
+
+    // Formatando strings
+
+    float preco1 = 20.5; 
+    float preco2 = 1.50; 
+    float preco3 = 4.50; 
+
+    // printf("%.2f\n", preco1);
+    // printf("%.2f\n", preco2); 
+    // printf("%.2f\n", preco3); 
+
+    
+    // Ajustando a largura da exibição 
+
+    printf("%7.2f\n", preco1);
+    printf("%7.2f\n", preco2); 
+    printf("%7.2f\n", preco3); 
+
+}
 int main(){
 
 
@@ -121,7 +175,11 @@ int main(){
 
     // precisaoImpressao();
 
-    juntandoTudo();
+    // juntandoTudo(); 
+
+    // formatacao(); 
+
+    formatacaoFloats();
 
 
 
