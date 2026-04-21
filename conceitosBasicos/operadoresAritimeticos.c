@@ -18,7 +18,7 @@ int main(){
     // double resultado = numeroA * numeroB; 
     // double resultado = numeroC / numeroD; 
 
-    // printf("Resultado: %lf", resultado);
+    // pr intf("Resultado: %lf", resultado);
 
     // Decrementando e incrementando valores. 
 
