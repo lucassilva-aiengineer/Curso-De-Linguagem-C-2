@@ -1,4 +1,5 @@
-#include <stdio.h> 
+#include <stdio.h>
+#include <string.h>
 
 
 void testeInicial(){
@@ -25,10 +26,11 @@ int main(){
 
     // Por segurança já atribuímos valores as variáveis . 
 
-    int idade = 0; 
-    float mediaGeral = 0.0f;  
-    char nota = '\0';
-    char nome[20] = ""; 
+    int idade; 
+    float mediaGeral;  
+    char nota;
+    char nome[20];
+    char nomeCompleto[50]; 
 
 
     
@@ -46,12 +48,25 @@ int main(){
     printf("Indique a sua nota: ");
     scanf(" %c", &nota); 
 
+    printf("Indique o seu nome: ");
+    scanf("%s", nome); 
 
-    printf("%d\n", idade);
-    printf("%f\n", mediaGeral);
-    printf("%c\n", nota);
-    printf("%s\n", nome); 
+    // LIMPEZA DE BUFFER: Consome o '\n' que o scanf anterior deixou para trás
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
 
+    
+    printf("Indique o seu nome completo: ");
+    fgets(nomeCompleto, sizeof(nomeCompleto), stdin);
+
+    // Removendo o buffer 
+    nomeCompleto[strlen(nomeCompleto) - 1] = '\0'; // Lembre-se strings são cadeias de caracteres. 
+
+    printf("Idade: %d\n", idade);
+    printf("Media Geral: %f\n", mediaGeral);
+    printf("Nota: %c\n", nota);
+    printf("Primeiro Nome: %s\n", nome); 
+    printf("Nome Completo: %s\n", nomeCompleto);
 
 
     return 0;
