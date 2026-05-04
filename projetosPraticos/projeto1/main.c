@@ -25,7 +25,7 @@ int main(){
     
     printf("========= Nota Fiscal ==========\n");
 
-    printf("%s  - %f x %d", nomeItem, preco, quantidade);git add 
+    printf("%s  - %f x %d", nomeItem, preco, quantidade); 
     // printf("Total: %f", precoTotal);
     
 
